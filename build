@@ -1,0 +1,13 @@
+#!/usr/bin/env ruby
+
+# openssl genrsa -out mykey.pem 1024
+
+require 'bundler/setup'
+require 'crxmake'
+
+CrxMake.make(
+  ex_dir: './src',
+  pkey: 'mykey.pem',
+  crx_output: 'adblocker.crx',
+  verbose: true
+)
