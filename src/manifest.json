@@ -9,7 +9,7 @@
        "webRequest",
        "webRequestBlocking",
        "*://*.channel4.com/*",
-	   "*://*.innovid.com/*",
-	   "*://*.videologygroup.com/*"
+     "*://*.innovid.com/*",
+     "*://*.videologygroup.com/*"
    ]
 }
