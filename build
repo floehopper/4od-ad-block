@@ -1,13 +1,14 @@
 #!/usr/bin/env ruby
 
-# openssl genrsa -out mykey.pem 1024
+# openssl genpkey -algorithm RSA -pkeyopt rsa_keygen_bits:2048 -pkeyopt rsa_keygen_pubexp:65537 | openssl pkcs8 -topk8 -nocrypt -outform pem > private-key.pem
+# openssl pkey -pubout -inform pem -outform pem -in private-key.pem -out rsa-2048-public-key.pem
 
 require 'bundler/setup'
 require 'crxmake'
 
 CrxMake.make(
   ex_dir: './src',
-  pkey: 'mykey.pem',
+  pkey: 'private-key.pem',
   crx_output: 'adblocker.crx',
   verbose: true
 )
