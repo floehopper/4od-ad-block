@@ -1,15 +1,15 @@
 {
-   "name": "4od ad blocker",
-   "version": "1.0",
-   "manifest_version": 2,
-   "background": {
-       "scripts": ["background.js"]
-   },
-   "permissions": [
-       "webRequest",
-       "webRequestBlocking",
-       "*://*.channel4.com/*",
-     "*://*.innovid.com/*",
-     "*://*.videologygroup.com/*"
-   ]
+  "name": "4od ad blocker",
+  "version": "1.0",
+  "manifest_version": 2,
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "permissions": [
+    "webRequest",
+    "webRequestBlocking",
+    "*://*.channel4.com/*",
+    "*://*.innovid.com/*",
+    "*://*.videologygroup.com/*"
+  ]
 }
